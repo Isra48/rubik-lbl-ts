@@ -6,7 +6,6 @@
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
-    "src",
     "README.md",
     "LICENSE"
   ],
@@ -14,7 +13,7 @@
     "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
     "build": "npm run clean && tsc",
     "typecheck": "tsc --noEmit",
-    "test": "tsc --noEmit && npm run build && node --test \"dist/__tests__/*.test.js\"",
+    "test": "npm run clean && tsc -p tsconfig.test.json && node --test \"dist/__tests__/*.test.js\"",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
