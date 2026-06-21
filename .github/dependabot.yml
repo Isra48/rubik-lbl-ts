@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # Mantiene al día las devDependencies (TypeScript, @types/node).
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+
+  # Mantiene al día las GitHub Actions usadas en CI.
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
