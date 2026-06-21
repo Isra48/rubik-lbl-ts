@@ -1,0 +1,31 @@
+name: ✨ Solicitud de feature
+description: Propone una mejora o nueva funcionalidad.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: ¿Qué problema resuelve?
+      description: Describe la necesidad o el caso de uso.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Solución propuesta
+      description: Cómo te imaginas la API o el comportamiento.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+    validations:
+      required: false
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Restricciones del proyecto
+      options:
+        - label: La propuesta mantiene el paquete zero-dependency (sin dependencias en runtime).
+          required: true
