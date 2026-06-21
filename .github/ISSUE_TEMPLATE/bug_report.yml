@@ -1,0 +1,39 @@
+name: 🐛 Reporte de bug
+description: Reporta un comportamiento incorrecto del solver, la validación o el match de colores.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportar. **No incluyas secretos ni datos sensibles.**
+        Si crees que es una vulnerabilidad de seguridad, no abras un issue: usa
+        [Security Advisories](https://github.com/Isra48/rubik-lbl-ts/security/advisories/new).
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: ¿Qué pasó?
+      description: Describe el comportamiento observado y el esperado.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Pasos para reproducir
+      description: Incluye un fragmento de código mínimo y, si aplica, el estado del cubo de entrada.
+      render: typescript
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión del paquete
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: node
+    attributes:
+      label: Versión de Node
+      placeholder: "22.x"
+    validations:
+      required: false
