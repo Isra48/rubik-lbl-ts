@@ -39,7 +39,7 @@
     "url": "https://github.com/Isra48/rubik-lbl-ts.git"
   },
   "devDependencies": {
-    "@types/node": "^25.9.3",
+    "@types/node": "^26.0.0",
     "typescript": "^5.4.0"
   }
 }
